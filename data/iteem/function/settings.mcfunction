@@ -4,11 +4,11 @@
 data modify storage iteem:settings PERSIST set value false
 
 #>-------------------
-#> setting : 
+#> check_item_entities : bool
 #-------------------
 # ~ 
 #-------------------
 # - 
 #-------------------
-## data modify storage iteem:settings setting set value 0
+data modify storage iteem:settings check_item_entities set value true
 #>-------------------
