@@ -7,4 +7,4 @@ data modify storage iteem:var inventory.added set from storage invi:hook invento
 
 execute if data storage iteem:var inventory.added[] run function iteem:_/inventory/each_item
 
-# invi:hook info.added info.removed
+data remove storage iteem:var inventory

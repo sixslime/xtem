@@ -4,4 +4,4 @@
 #--------------------
 
 data modify storage iteem:var register.item set from entity @s Item
-function iteem:_/register
+#function iteem:_/register
