@@ -18,4 +18,4 @@ scoreboard objectives add --iteem dummy
 
 # tick
 schedule clear iteem:_/tick
-execute if data storage iteem:settings {check_item_entities:true} run function iteem:_/tick
+execute if data storage iteem:settings {register:{item_entities:true}} run function iteem:_/tick

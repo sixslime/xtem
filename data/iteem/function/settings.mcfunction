@@ -4,11 +4,21 @@
 data modify storage iteem:settings PERSIST set value false
 
 #>-------------------
-#> check_item_entities : bool
+#> register.item_entities
 #-------------------
 # ~ 
 #-------------------
 # - 
 #-------------------
-data modify storage iteem:settings check_item_entities set value true
+data modify storage iteem:settings register.item_entities set value true
+#>-------------------
+
+#>-------------------
+#> register.in_inventory
+#-------------------
+# ~ 
+#-------------------
+# - 
+#-------------------
+data modify storage iteem:settings register.in_inventory set value true
 #>-------------------
