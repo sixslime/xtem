@@ -7,7 +7,6 @@ data modify storage iteem:var register.item set from storage iteem:var inventory
 data remove storage iteem:var register.item.Slot
 function iteem:_/register
 
-data modify storage iteem:var register.item.components."minecraft:custom_data".iteem.registered set value true
 data modify storage iteem:var register.item.Slot set from storage iteem:var inventory.register.Slot
 
 execute store result score *register.slot -iteem run data get storage iteem:var register.item.Slot
