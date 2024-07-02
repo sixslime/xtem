@@ -1,4 +1,4 @@
-#> iteem:_/inventory/give
+#> xtem:_/inventory/give
 #--------------------
 # ./do_register
 #--------------------

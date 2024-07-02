@@ -1,4 +1,4 @@
-#> iteem:_/inventory/replace
+#> xtem:_/inventory/replace
 #--------------------
 # UNUSED
 #--------------------

@@ -1,7 +1,7 @@
-#>iteem:settings
+#>xtem:settings
 
-#declare storage iteem:settings
-data modify storage iteem:settings PERSIST set value false
+#declare storage xtem:settings
+data modify storage xtem:settings PERSIST set value false
 
 #>-------------------
 #> register.item_entities
@@ -10,7 +10,7 @@ data modify storage iteem:settings PERSIST set value false
 #-------------------
 # - 
 #-------------------
-data modify storage iteem:settings register.item_entities set value true
+data modify storage xtem:settings register.item_entities set value true
 #>-------------------
 
 #>-------------------
@@ -20,5 +20,5 @@ data modify storage iteem:settings register.item_entities set value true
 #-------------------
 # - 
 #-------------------
-data modify storage iteem:settings register.in_inventory set value true
+data modify storage xtem:settings register.in_inventory set value true
 #>-------------------
