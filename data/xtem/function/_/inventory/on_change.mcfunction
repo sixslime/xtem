@@ -3,6 +3,7 @@
 # @hook : invi:inventory_change
 #--------------------
 
+execute if data storage xtem:settings {creative_override:true} if entity @s[gamemode=creative] run return 0
 execute unless data storage xtem:settings {register:{in_inventory:true}} run return 0
 data modify storage xtem:var inventory.added set from storage invi:hook inventory_change[-1].info.added
 

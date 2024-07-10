@@ -22,3 +22,13 @@ data modify storage xtem:settings register.item_entities set value true
 #-------------------
 data modify storage xtem:settings register.in_inventory set value true
 #>-------------------
+
+#>-------------------
+#> creative_override
+#-------------------
+# ~ 
+#-------------------
+# - 
+#-------------------
+data modify storage xtem:settings creative_override set value true
+#>-------------------
