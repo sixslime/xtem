@@ -1,12 +1,15 @@
 > #xtem:hook > register
 --------------------
- * 
+ ! when a new item is introduced to the world.
+  @ tick
 --------------------
- -> 
+ [AS] [AT] item
 --------------------
- <-> 
+ ...
 --------------------
- - 
---------------------
-# APPEND
+ - this hook allows changing/observation of ALL items that the player can interact with.
+ - xtem will call this hook immediately on any <item> that is not registered, and then register it (keeping any modifications made to it via this hook).
+
+ - <item> is an entity that holds the registering item in slot `container.0`.
+ - any modifications to the item in <item>'s `container.0` will be put onto the newly registered item.
 --------------------
