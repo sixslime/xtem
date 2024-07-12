@@ -13,6 +13,6 @@
  - xtem will call this hook immediately on any item that is not registered, and then register it (keeping any modifications made to it via this hook).
 
  - [item] is an item display entity that holds the registering item in its `item` nbt path.
-  ~ (note that this can also be accessed via [item]'s `container.0` slot.)
+  ~ (can also be accessed via [item]'s `container.0` slot.)
  - any modifications to the item in [item]'s `container.0` slot or `item` nbt path will be put onto the newly registered item.
 --------------------
