@@ -1,6 +1,8 @@
 > #xtem:hook > register
 --------------------
- ! when a new item is introduced to the world.
+ ! when a new (unregistered) item is added to the players inventory.
+  @ adv (immediately)
+ ! when a new (unregistered) item is spawned via item entity.
   @ tick
 --------------------
  [AS] [AT] item

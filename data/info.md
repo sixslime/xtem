@@ -1,6 +1,5 @@
 
 # Dependencies
-* invi
 
 # Supports
 
