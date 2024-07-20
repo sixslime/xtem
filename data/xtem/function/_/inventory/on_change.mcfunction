@@ -9,6 +9,7 @@ execute if data storage xtem:settings {creative_override:true} if entity @s[game
 execute unless data storage xtem:settings {register:{in_inventory:true}} run return 0
 data modify storage xtem:var inventory.added set from entity @s Inventory
 data remove storage xtem:var inventory.added[{components:{"minecraft:custom_data":{xtem:{registered:true}}}}]
+data remove storage xtem:var inventory.added[{components:{"minecraft:custom_data":{__:true}}}]
 
 execute if data storage xtem:var inventory.added[] run function xtem:_/inventory/each_item
 
