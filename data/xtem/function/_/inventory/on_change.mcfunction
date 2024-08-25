@@ -11,6 +11,6 @@ data modify storage xtem:var inventory.added set from entity @s Inventory
 data remove storage xtem:var inventory.added[{components:{"minecraft:custom_data":{xtem:{registered:true}}}}]
 data remove storage xtem:var inventory.added[{components:{"minecraft:custom_data":{__:true}}}]
 
-execute if data storage xtem:var inventory.added[] run function xtem:_/inventory/each_item
+execute if data storage xtem:var inventory.added[0] run function xtem:_/inventory/each_item
 
 data remove storage xtem:var inventory
