@@ -30,5 +30,5 @@ data modify storage xtem:settings register.in_inventory set value true
 #-------------------
 # - 
 #-------------------
-data modify storage xtem:settings creative_override set value true
+data modify storage xtem:settings creative_override set value false
 #>-------------------
