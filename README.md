@@ -19,16 +19,35 @@ Any changes to the `item` data within the item entity will be applied to the fin
 
 It is recommended to append/merge data when possible instead of overwriting/setting; another datapack may have made changes to the same item.
 
-### "Custom" Tag
+### The "Custom" Tag
 A datapack may add `_:true` to an item's `custom_data` to mark an item as custom, asserting that the item does not serve the same purpose that it's item id entails. \
 Subscribers to `xtem:hook/register` should recognize items with this tag as non-vanilla items.
 
 Items with `_:true` should really only be changed if there is explicit compatibility with the custom item's datapack.
 
-## Examples
+## Example
 **Turn all stone swords into iron swords:**
 
-WIP OBV
+*\<your datapack\>/data/xtem/tags/function/hook/register.json*
+```json
+{
+    "values": [
+        "mypack:_/my_xtem_register"
+    ]
+}
+```
+
+*\<your datapack\>/data/mypack/function/_/my_xtem_register.mcfunction*
+```mcfunction
+# ignore custom items.
+execute if items entity @s container.0 *[minecraft:custom_data~{_:true}] run return fail
+
+# ignore anything thats not a stone sword.
+execute unless items entity @s container.0 minecraft:stone_sword run return fail
+
+# change the item id to iron sword.
+data modify entity @s item.id set value "minecraft:iron_sword"
+```
 ___
 
 <p align="center">
