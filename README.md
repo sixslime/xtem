@@ -8,7 +8,7 @@
 # Overview
 The goal of Xtem is to allow easy and modular modification of "default" items.
 
-It achieves this by triggering a hook for every *unregistered* item that enters a player's inventory or spawns as an item entity, providing that item's data and allowing it to be changed, and registering it.
+It seeks to achieve this by triggering a hook for every *unregistered* item that enters a player's inventory or spawns as an item entity, providing that item's data and allowing it to be changed, and registering it.
 # Usage
 
 ### Registering Items
