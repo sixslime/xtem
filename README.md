@@ -28,7 +28,7 @@ Items with `_:true` should really only be changed if there is explicit compatibi
 ## Example
 **Turn all stone swords into iron swords:**
 
-`<your datapack>/data/xtem/tags/function/hook/register.json:`
+`<your datapack>/data/xtem/tags/function/hook/register.json`:
 ```json
 {
     "values": [
@@ -37,7 +37,7 @@ Items with `_:true` should really only be changed if there is explicit compatibi
 }
 ```
 
-`<your datapack>/data/mypack/function/_/my_xtem_register.mcfunction:`
+`<your datapack>/data/mypack/function/_/my_xtem_register.mcfunction`:
 ```mcfunction
 # ignore custom items.
 execute if items entity @s container.0 *[minecraft:custom_data~{_:true}] run return fail
