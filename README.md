@@ -19,8 +19,8 @@ Any changes to the `item` data within the item entity will be applied to the fin
 
 It is recommended to append/merge data when possible instead of overwriting/setting; another datapack may have made changes to the same item.
 
-### The "Custom" Tag
-A datapack may add `_:true` to an item's `custom_data` to mark an item as custom, asserting that the item does not serve the same purpose that it's item id entails. \
+### The '_' Tag
+A datapack may add `_:true` to an item's `custom_data` to asserting that the item does not serve the same purpose that it's item id entails (for items with custom behavior). \
 Subscribers to `xtem:hook/register` should recognize items with this tag as non-vanilla items.
 
 Items with `_:true` should really only be changed if there is explicit compatibility with the custom item's datapack.
