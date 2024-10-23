@@ -26,9 +26,9 @@ Subscribers to `xtem:hook/register` should recognize items with this tag as non-
 Items with `_:true` should really only be changed if there is explicit compatibility with the custom item's datapack.
 
 ## Example
-**Turn all stone swords into iron swords:**
+Turn all stone swords into iron swords:
 
-`<your datapack>/data/xtem/tags/function/hook/register.json`:
+`<datapack>/data/xtem/tags/function/hook/register.json`:
 ```json
 {
     "values": [
@@ -37,7 +37,7 @@ Items with `_:true` should really only be changed if there is explicit compatibi
 }
 ```
 
-`<your datapack>/data/mypack/function/_/my_xtem_register.mcfunction`:
+`mypack:_/my_xtem_register`:
 ```mcfunction
 # ignore custom items.
 execute if items entity @s container.0 *[minecraft:custom_data~{_:true}] run return fail
