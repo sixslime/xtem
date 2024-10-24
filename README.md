@@ -1,6 +1,6 @@
 
 # Xtem | xtem
-> Observe and change every new item introduced to a world.
+> Hook to observe and change every new item introduced to a world.
 
 ## Dependencies
 - [load](https://github.com/sixslime/load)
