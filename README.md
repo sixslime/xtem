@@ -39,13 +39,13 @@ Turn all stone swords into iron swords:
 
 `mypack:_/my_xtem_register`:
 ```mcfunction
-# ignore custom items.
+# ignore custom items:
 execute if items entity @s container.0 *[minecraft:custom_data~{_:true}] run return fail
 
-# ignore anything that is not a stone sword.
+# ignore anything that is not a stone sword:
 execute unless items entity @s container.0 minecraft:stone_sword run return fail
 
-# change the item id to iron sword.
+# change the item id to iron sword:
 data modify entity @s item.id set value "minecraft:iron_sword"
 ```
 ___
