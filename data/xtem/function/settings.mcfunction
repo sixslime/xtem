@@ -5,6 +5,7 @@ data modify storage xtem:settings PERSIST set value false
 
 #>-------------------
 #> register.item_entities
+#: bool
 #-------------------
 # ~ if true: detect and register new dropped item entities.
 #-------------------
@@ -13,6 +14,7 @@ data modify storage xtem:settings register.item_entities set value true
 
 #>-------------------
 #> register.in_inventory
+#: bool
 #-------------------
 # ~ if true: detect and register items in player inventories.
 #-------------------
@@ -23,6 +25,7 @@ data modify storage xtem:settings register.in_inventory set value true
 
 #>-------------------
 #> creative_override
+#: bool
 #-------------------
 # ~ if true: ignore inventories of players in creative mode.
 #-------------------
