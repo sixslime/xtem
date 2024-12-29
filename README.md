@@ -14,7 +14,7 @@ It seeks to achieve this by triggering a hook for every *unregistered* item that
 ### Registering Items
 Add subscriber functions to the `#xtem:hook/register` function tag.
 
-This tag will run every time an unregistered item is detected; AS an ephemeral `item_display` entity (AT the unregistered item's location), with it's `item` NBT data containing the item. \
+This tag will run every time an unregistered item is detected AS an ephemeral `item_display` entity with it's `item` NBT data containing the unregistered item. \
 Any changes to the `item` data within the item entity will be applied to the final registered item.
 
 It is recommended to append/merge data when possible instead of overwriting/setting; another datapack may have made changes to the same item.
